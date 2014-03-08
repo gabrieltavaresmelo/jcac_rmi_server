@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import org.tbee.javafx.scene.layout.fxml.MigPane?>
+<?import layouttests.migfxml.sample1.*?>
+
+<MigPane id="rootPane" 
+	prefHeight="450.0" 
+	prefWidth="400.0"
+	fx:controller="br.com.gtmf.window.MainLayoutWindow" 
+	styleClass="main-panel"
+	layout="fillx, gap unrel rel" 
+	cols="" 
+	rows="[fill][fill][fill][fill]" 
+	xmlns:fx="http://javafx.com/fxml">
+
+
+	<MigPane id="topPane" 
+		styleClass="top-panel"
+		layout="fillx, insets 0" 
+		cols="" 
+		rows="[fill,grow][fill,grow]" 
+		MigPane.cc="dock north, grow"
+	>
+		<MenuBar MigPane.cc="spanx, growx, wrap" styleClass="menu-bar">
+			<menus>
+				<Menu mnemonicParsing="false" text="Arquivo">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#handleSetPort"
+							text="Porta...">
+							<accelerator>
+								<KeyCodeCombination alt="UP" code="N" control="ANY"
+									meta="UP" shift="UP" shortcut="UP" />
+							</accelerator>
+						</MenuItem>
+						<SeparatorMenuItem mnemonicParsing="false" />
+						<MenuItem mnemonicParsing="false" onAction="#handleExit"
+							text="Sair">
+							<accelerator>
+								<KeyCodeCombination alt="ANY" code="F4"
+									control="UP" meta="UP" shift="UP" shortcut="UP" />
+							</accelerator>
+						</MenuItem>
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Ajuda">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#handleAbout"
+							text="Sobre" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		
+		<MigPane id="toolbarPane" 
+			styleClass="top-panel"
+			layout="insets 10 10 10 10" 
+			cols="" 
+			rows="[fill][fill]" 
+			MigPane.cc="spanx, growx"
+		>
+
+			<Label text="[Servidor] Jogo Cara-a-Cara" styleClass="title-message" MigPane.cc="growx, wrap" /> 
+	    	<ToggleButton fx:id="tbStatus" text="Conectar" onAction="#tbStatusItemChange" MigPane.cc="width 120, height 30:30:50, align center, gaptop 30, gapbottom 30, gapleft 30, gapright 30" />
+	    </MigPane>
+	</MigPane>
+
+	<MigPane id="footerPane" 
+		styleClass="top-panel"
+		layout="fillx, insets 0"
+		cols="" 
+		rows="" 
+		MigPane.cc="dock south, grow"
+	>
+	    <Label fx:id="lbStatus" text="Desconectado" styleClass="message-success" MigPane.cc="growx, wrap" />
+	</MigPane>
+
+	<MigPane id="body1Pane" 
+		styleClass="body01-message"
+		layout="fill" 
+		cols="[][]" 
+		rows="" 
+		MigPane.cc="width 250:300:350, dock center, growy"
+	>
+	
+		<Label text="Porta:" styleClass="message-success" MigPane.cc="gaptop 15, spanx 2, split 2" />
+	    <Label fx:id="lbPorta" styleClass="message-success" text="9009" MigPane.cc="wrap, gaptop 15" />
+	    
+	    <Label text="Interfaces:" styleClass="body01-message" MigPane.cc="spanx 2, wrap" />
+	    <Label fx:id="lbInterfaces" styleClass="body01-message" text="testEth0" MigPane.cc="spanx 2, growx, wrap" />
+	
+	</MigPane>
+
+	<MigPane id="body2Pane" 
+		styleClass="main-panel"
+		layout="fill" 
+		cols="" 
+		rows="" 
+		MigPane.cc="width 250:300:350, dock east, growy"
+	>
+	    <Label fx:id="lbBody2" text="" styleClass="body2-message" MigPane.cc="growx, wrap" />
+	</MigPane>
+</MigPane>

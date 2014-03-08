@@ -1,0 +1,144 @@
+/* Application wide styles */
+
+/* 
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+*/
+
+.toggle-button {
+    -fx-text-fill: #333333;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#ebebeb, #adadad);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 3, 0.0 , 0 , 1 );
+}
+
+.toggle-button:selected {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#47a447, #398439);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 3, 0.0 , 0 , 1 );
+}
+
+.button {
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#3276b1, #285e8e);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover{
+    -fx-base: #395bae;
+}
+
+
+/* Component specific styles */
+
+.main-panel {
+    /* -fx-background-image: url("../images/background.jpg"); */
+    -fx-background-color: #f9f9f9;
+}
+
+.top-panel{
+	-fx-background-color: #ececec;
+    -fx-text-fill: inherit;
+}
+
+.title-message {
+    -fx-text-fill: #0e4d8e;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+    -fx-effect: dropshadow( gaussian , rgba(40,94,142,0.2) , 2, 0, 0, 1 );
+}
+
+.toolbar-message {
+    -fx-text-fill: #0e4d8e;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-effect: dropshadow( gaussian , rgba(40,94,142,0.2) , 2, 0, 0, 1 );
+}
+
+.message-default {
+    -fx-text-fill: #808080;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 10 10 20;
+}
+
+.message-primary {
+    -fx-text-fill: #3071a9;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 10 10 20;
+}
+
+.message-success {
+    -fx-text-fill: #449d44;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 10 10 20;
+}
+
+.message-info {
+    -fx-text-fill: #31b0d5;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 10 10 20;
+}
+
+.message-warning {
+    -fx-text-fill: #ec971f;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 10 10 20;
+}
+
+.message-danger {
+    -fx-text-fill: #c9302c;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10 10 10 20;
+    
+}
+
+.body01-message {
+    -fx-text-fill: #0e4d8e;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow( gaussian , rgba(40,94,142,0.2) , 2, 0, 0, 1 );
+    -fx-padding: 2 2 2 30;
+}
+
+.footer-message {
+    /* -fx-text-fill: #39803d; */
+    -fx-text-fill: #449d44;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    /* -fx-effect: dropshadow( gaussian , rgba(57,128,57,0.2) , 2, 0, 0, 1 ); */
+    -fx-effect: dropshadow( gaussian , rgba(40,94,142,0.2) , 2, 0, 0, 1 );
+    -fx-padding: 2 2 2 20;
+}
+
+.menu-bar {
+    -fx-text-base-color: #f9f9f9;
+    /* -fx-padding: 2 4 4 4; */
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    /* -fx-background-color: #B2E1FF; */
+}
